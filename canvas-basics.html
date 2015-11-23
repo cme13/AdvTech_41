@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Canvas Basics</title>
+</head>
+
+<body>
+
+<canvas width="800" height="600" id="myCanvas">
+	Sorry, your browser does not support the HTML canvas tag.
+</canvas>
+
+<script>
+	var myCanvas = document.getElementById("myCanvas");
+	//make an object for its "context" and choose a context
+	var ctx = myCanvas.getContext("2d");
+	// make a rectangle
+	//fill rect(positionx ,starting y ,width ,height);
+	ctx.fillRect(20,10,100,50);
+	//you can make a rectangular stroke
+	//mot tied to the fill we made
+	ctx.strokeStyle = "#006699"
+	ctx.lineWidth=5;
+	ctx.strokeRect(50,25,100,50);
+</script>
+</body>
+</html>
