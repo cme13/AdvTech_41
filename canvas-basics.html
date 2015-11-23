@@ -23,6 +23,18 @@
 	ctx.strokeStyle = "#006699"
 	ctx.lineWidth=5;
 	ctx.strokeRect(50,25,100,50);
+	
+	//start a line
+	ctx.beginPath();
+	//lineTo is like lifting your pen and moving it without making a line
+	ctx.moveTo(240,80);
+	//moveTo also moves the pen, but makes a line to the new coordinate
+	ctx.lineTo(300,20);
+
+	//draw an arc(center-x, center-y, radius,startAngle, endAngle,counterclockwise )
+	ctx.arc(300,300,100,100,Math.PI*1,false);
+	//to get the stroke appear:
+	ctx.stroke();
 </script>
 </body>
 </html>
